@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Browser Sentinel",
+  "version": "1.0",
+  "description": "Real-time Firefox hardening and threat detection",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "tabs",
+    "storage",
+    "notifications",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
